@@ -94,9 +94,10 @@ nav a.active{
 
 .grid_container>div, .history>div{
     border: solid #133416 1px;
-    border-radius: 0.6%;
+    border-radius: 2%;
     padding: 2%;
     margin: 2%;
+    box-shadow: 1px 1.5px rgba(130, 130, 130, 0.3);
 }
 
 .history > div > h2, .history > div >  p, .history > div >  img, .literature > h2, .literature > h3, .literature > img, .literature > p,  .literature > ul{
@@ -115,7 +116,7 @@ h1{
 }
 h2{
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     /* margin-top: 10px; */
     margin-top: 1%;
 }
@@ -173,6 +174,7 @@ footer a, footer a:visited{
 dd{
     font-size: 20px;
     font-weight: 600;
+    color: #DAF96E;
 }
 
 dt{
@@ -187,6 +189,7 @@ dt{
 
 dd>p{
     font-size: 20px;
+    color: #F0EEE2;
 }
 
 
@@ -254,7 +257,7 @@ nav{
     }
     h2{
         font-size: 28px;
-        font-weight: 600;
+        font-weight: 500;
         /* margin-top: 10px; */
         margin-top: 1%;
     }
@@ -278,6 +281,7 @@ nav{
     .grid_container>div, .history>div{
         border: solid #133416 2px;
         border-radius: 3%;
+        box-shadow: 3px 3px rgba(130, 130, 130, 0.3);
     }
 
     .history > div > h2, .history > div >  p, .history > div >  img, .literature > h2, .literature > h3, .literature > img, .literature > p,  .literature > ul{

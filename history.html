@@ -18,19 +18,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Women's Web - History</title>
 </head>
 
 <body>
-  <a href="#mainstuff" class="skip"> Skip to Main Content</a>
+  <a href="#mainstuff" class="skip" tabindex="0"> Skip to Main Content</a>
   <header>
-    <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="literature.html">Literature</a></li>
-          <li><a class="active" href="history.html">History and Politics</a></li>
-          <li><a href="femdict.html">Feminist Dictionary</a></li>
+   <nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Open the menu">
+      <i class="fa fa-bars" aria-hidden="true"></i></a>
+        <ul id="navlinks">
+          <li><a class="active" href="index.html" tabindex="0">About</a></li>
+          <li><a href="literature.html" tabindex="0">Literature</a></li>
+          <li><a href="history.html" tabindex="0">History and Politics</a></li>
+          <li><a href="femdict.html" tabindex="0">Feminist Dictionary</a></li>
         </ul>
     </nav>
       <!-- definitions from meriam webster -->
@@ -600,8 +603,19 @@
           Thanks for visiting! <i class="fa-regular fa-handshake"></i>
         </p>
         <p>Original content created by Kelsey Toporski 2019 <i class="fa-regular fa-copyright"></i></p>
-        <a href="#main">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#mainstuff" tabindex="0">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
       </footer>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("navlinks");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+          }
+        }
+        </script>
 </body>
 
 </html>
